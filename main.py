@@ -124,8 +124,6 @@ frame_nums = [x['frame_num'] for x in differences]
 frame_nums.append(1)
 frame_nums = sorted(frame_nums)
 
-print(differences)
-
 # 创建excel的workbook
 wb = Workbook()
 # 获取被激活的worksheet
