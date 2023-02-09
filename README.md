@@ -16,7 +16,10 @@
 首次运行该程序时会提示如下内容并开始下载easyocr的模型：
   
 ```Downloading detection model, please wait. This may take several minutes depending upon your network connection.```
-请确保网络状况良好。该下载过程可能会失败，请尝试重启程序以重新下载（可能会失败多次）或寻找镜像下载地址手动下载。
+  
+请确保网络状况良好。该下载过程可能会失败，请尝试重启程序以重新下载（可能会失败多次）或手动下载。  
+手动下载地址如：```https://www.jaided.ai/easyocr/modelhub/```（需下载此链接中的zh_sim_g2与CRAFT，参考：```https://zhuanlan.zhihu.com/p/566665446```）  
+若手动下载模型，则下载完成后将文件craft_mlt_25k.pth与文件zh_sim_g2.pth放到目录C:\Users\123\.EasyOCR\model下（123为用户名）。
 
 
 ## 用词说明：
