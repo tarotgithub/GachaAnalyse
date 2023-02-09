@@ -39,14 +39,17 @@
 ## 手动框选角色部分与页码部分方法：
 类似于截屏操作，将鼠标移至要框选区域的左上角，按住鼠标左键不动，将鼠标移至要框选区域的右下角，松开鼠标左键。
 
-## 生成的文件
+## 生成的文件：
 该工具会在视频所在目录下生成一个与视频同名的.xlsx文件
 
-## 启用gpu加速
+## 启用gpu加速：
 该工具使用easyocr时默认不启用gpu，若要启用，请于main.py文件中将  
 ```reader = easyocr.Reader(['ch_sim'], gpu=False)```   
 更改为  
 ```reader = easyocr.Reader(['ch_sim'], gpu=True)``` 
   
 同时，请确保pytorch版本与cuda版本相符。
+
+## 使用演示视频：
+```https://www.bilibili.com/video/BV1SR4y1q7dR/```
 
