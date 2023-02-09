@@ -5,6 +5,14 @@
 由于同一页码图像相近，故灰度化、阈值化、异或并求和所得值较小，不同页码则较大，因此对这些值统计并降序排序后可获得页面发生跳转的帧的序号，而无需对页码进行文字识别，提高了效率。
 
 # 使用说明
+## 安装依赖包说明：
+1.更新pip：
+```python -m pip install --upgrade pip```
+
+2.若安装过程中显示依赖包版本冲突，请使用
+```pip install -r requirements.txt --no-dependencies```
+
+
 ## 用词说明：
 “角色部分”：指祈愿历史记录中“名称”一列（不包括“名称”单元格）；
   
@@ -27,3 +35,4 @@
 ```reader = easyocr.Reader(['ch_sim'], gpu=False)```   
 更改为  
 ```reader = easyocr.Reader(['ch_sim'], gpu=True)``` 
+同时，请确保pytorch版本与cuda版本相符。
