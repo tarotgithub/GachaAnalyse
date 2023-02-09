@@ -12,6 +12,12 @@
 2.若安装过程中显示依赖包版本冲突，请使用
 ```pip install -r requirements.txt --no-dependencies```
 
+## easyocr说明
+首次运行该程序时会提示如下内容并开始下载easyocr的模型：
+  
+```Downloading detection model, please wait. This may take several minutes depending upon your network connection.```
+请确保网络状况良好。该下载过程可能会失败，请尝试重启程序以重新下载（可能会失败多次）或寻找镜像下载地址手动下载。
+
 
 ## 用词说明：
 “角色部分”：指祈愿历史记录中“名称”一列（不包括“名称”单元格）；
@@ -34,9 +40,10 @@
 该工具会在视频所在目录下生成一个与视频同名的.xlsx文件
 
 ## 启用gpu加速
-该工具默认不启用gpu，若要启用，请于main.py文件中将  
+该工具使用easyocr时默认不启用gpu，若要启用，请于main.py文件中将  
 ```reader = easyocr.Reader(['ch_sim'], gpu=False)```   
 更改为  
 ```reader = easyocr.Reader(['ch_sim'], gpu=True)``` 
   
 同时，请确保pytorch版本与cuda版本相符。
+
